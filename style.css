@@ -90,6 +90,40 @@ p{
 }
 /* default styles end */
 
+/* header start */
+header{
+    width: 100%;
+    
+    background-color: #03121F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-container{
+    width: 1160px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.header-left a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 35px;
+}
+.header-right a{
+    color: #2196f3;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 25px;
+    border: 1px solid #2196f3;
+}
+.header-right a i{
+    padding-right: 10px;
+}
+/* header start */
+
 /* hero section start */
 .hero{
     width: 100%;
@@ -355,7 +389,9 @@ footer{
 
 /* media query mobile start */
 @media screen and (max-width: 480px) {
-    
+    header{
+        display: none;
+    }
     .hero{
     height: 100vh;
     }
